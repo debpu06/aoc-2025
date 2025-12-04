@@ -30,6 +30,9 @@ int main(void) {
     if (count == 0) {
       continue;
     }
+
+    count = count % (MAX_DIAL + 1);
+
     printf("input %s, count %d, direction %d\n", buffer, count,
            currentDirection);
     if (currentDirection == LEFT) {
